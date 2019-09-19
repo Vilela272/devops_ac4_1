@@ -1,19 +1,30 @@
-import sys
+class Elevador:
 
+    andar_atual = 0  
+    quantidade_pessoas = 0
 
-def linhaSimples(a):
-    for b in range(a):
-        sys.stdout.write("-")
-    sys.stdout.write("\n")
+    def __init__(self, capacidade, total_andares):
+        self.capacidade = capacidade
+        self.total_andares = total_andares
 
+    def entrar(self):
+        if self.quantidade_pessoas < self.capacidade:
+            self.quantidade_pessoas += 1
 
-def linhaDupla(c):
-    for d in range(c):
-        sys.stdout.write("=")
-    sys.stdout.write("\n")
+    def sair(self):
+        if self.quantidade_pessoas > 0:
+            self.quantidade_pessoas -= 1
 
+    def subir(self):
+        if self.andar_atual < self.total_andares:
+            self.andar_atual += 1
 
-def linha(e, f):
-    for g in range(f):
-        sys.stdout.write(e)
-    sys.stdout.write("\n")
+    def descer(self):
+        if self.andar_atual > 0:
+            self.andar_atual -= 1 
+
+    def ir_para_andar(self, andar):
+        if andar > self.total_andares or andar < 0:
+            self.andar_atual = self.andar_atual
+        else:
+            self.andar_atual = andar
