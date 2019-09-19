@@ -3,7 +3,7 @@ from com.vilela.operacoes import Elevador
 
 class TestOperacoes(TestCase):
 
-	def test_elevador1():
+	def test_elevador1(self):
 		assert elevador.andar_atual == 0
 		assert elevador.quantidade_pessoas == 0
 
