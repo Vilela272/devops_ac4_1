@@ -7,4 +7,4 @@ class TestOperacoes(TestCase):
 		self.operacoes = Multiplicacao()
 	
 	def test_mult(self):
-		sel.assertEqual(sel.operacoes.mult([5,5]), 25, "Resultado 25" )
+		self.assertEqual(sel.operacoes.mult([5,5]), 25, "Resultado 25" )
