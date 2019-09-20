@@ -1,9 +1,11 @@
 from unittest import TestCase
 from com.vilela.operacoes import Elevador
 
+elevador = operacoes.Elevador(5, 20)
+
 class TestOperacoes(TestCase):
 
-	def test_elevador1(self):
+	def test_elevador1():
 		assert elevador.andar_atual == 0
 		assert elevador.quantidade_pessoas == 0
 
