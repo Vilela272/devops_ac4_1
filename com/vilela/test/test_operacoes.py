@@ -1,11 +1,11 @@
 from unittest import TestCase
 from com.vilela.operacoes import Elevador
-
+elevador = Elevador(5, 20)
 
 class TestOperacoes(TestCase):
 
-	def setUp(self):
-		self.elevador = Elevador(5, 20)
+	#def setUp(self):
+		#self.elevador = Elevador(5, 20)
 		
 
 	def test_elevador1():
