@@ -1,12 +1,10 @@
 from unittest import TestCase
-from com.vilela.operacoes import Elevador
+from com.vilela.operacoes import Multiplicacao
 
 class TestOperacoes(TestCase):
 
 	def setUp(self):
-		self.elevador = Elevador(5, 20)
-		
-
-	def test_elevador1():
-		self.assertEqual(self.operacoes.elevador.andar_atual == 0)
-		self.assertEqual(self.operacoes.elevador.quantidade_pessoas == 0)
+		self.operacoes = Multiplicacao()
+	
+	def test_mult(self):
+		sel.assertEqual(sel.operacoes.mult([5,5]), 25, "Resultado 25" )
