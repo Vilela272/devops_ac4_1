@@ -8,5 +8,5 @@ class TestOperacoes(TestCase):
 		
 
 	def test_elevador1():
-		self.assertEqual(self.operacoes.elevador.andar_atual == 0
-		self.assertEqual(self.operacoes.elevador.quantidade_pessoas == 0
+		self.assertEqual(self.operacoes.elevador.andar_atual == 0)
+		self.assertEqual(self.operacoes.elevador.quantidade_pessoas == 0)
